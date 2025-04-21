@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #e0e7ff; /* 淡蓝色背景 */
+}
+
+.sidebar {
+    background-color: rgba(34, 47, 62, 0.95); /* 深色带透明度的背景 */
+    color: #ecf0f1;
+    width: 240px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+    width: 90px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+    opacity: 0.9; /* 图片轻微透明 */
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    opacity: 1; /* 悬停时恢复不透明 */
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: #ecf0f1;
+    margin: 10px 0;
+    opacity: 0.9;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: #bdc3c7; /* 中性色字体 */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, background-color 0.3s;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05); /* 轻微淡色背景 */
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #1abc9c; /* 悬停时变成亮绿色 */
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: rgba(248, 249, 250, 0.9); /* 浅色背景，带透明度 */
+    margin-left: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 32px;
+    color: #34495e;
+    margin-bottom: 25px;
+}
+
+.info, .audio, .links {
+    background-color: rgba(255, 255, 255, 0.9); /* 内容块带透明度 */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.info:hover, .audio:hover, .links:hover {
+    background-color: rgba(236, 240, 241, 0.9); /* 悬停效果 */
+    transform: translateY(-5px); /* 悬停时微微浮起 */
+}
+
+.info h2, .audio h2, .links h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links li {
+    margin: 10px 0;
+}
+
+.links a {
+    color: #7f8c8d; /* 中性灰色字体 */
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(189, 195, 199, 0.1); /* 带透明度的灰色背景 */
+}
+
+.links a:hover {
+    color: #ffffff;
+    background-color: #3498db; /* 悬停时变成亮蓝色 */
+}
